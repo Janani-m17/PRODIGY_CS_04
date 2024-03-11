@@ -58,5 +58,9 @@ python main.py
 
 **Note:** Ensure that you have Python installed on your system before running the program.
 
+## Disclaimer
+
+This keylogger program is provided for educational purposes only. Do not use it for illegal activities. Respect the privacy and consent of others before using this software.
+
 ## **Contributors:**
 - [https://github.com/Janani-m17]
