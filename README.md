@@ -1,4 +1,4 @@
-# 🛡️ **Simple Keylogger**
+#  **Simple Keylogger**
 
 The Simple Keylogger is a Python program designed to capture and log keystrokes entered by users. It operates silently in the background, recording keystrokes into a text file.
 
