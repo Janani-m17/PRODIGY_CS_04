@@ -1,6 +1,3 @@
-Sure, here's the README file with an example added:
-
-
 # 🛡️ **Simple Keylogger**
 
 The Simple Keylogger is a Python program designed to capture and log keystrokes entered by users. It operates silently in the background, recording keystrokes into a text file.
@@ -12,6 +9,9 @@ The Simple Keylogger is a Python program designed to capture and log keystrokes 
 4. **Termination:** The keylogger can be stopped at any time by pressing a predefined key combination.
 
 ## **Components:**
+- `pynput`: The library used to monitor keyboard events.
+- `Key`: Represents keys on the keyboard.
+- `Listener`: Listens for and handles keyboard events.
 - `on_press(key)`: Function to handle key press events and log keystrokes.
 - `on_release(key)`: Function to handle key release events and stop the keylogger.
 - `main()`: The main function orchestrating the keylogger's operation and user interaction.
@@ -19,8 +19,8 @@ The Simple Keylogger is a Python program designed to capture and log keystrokes 
 ## **How to Use:**
 1. Run the program.
 2. The keylogger starts capturing keystrokes silently in the background.
-3. Press the predefined key combination to stop the keylogger.
-4. Access the log file to view the recorded keystrokes.
+3. Press the predefined key combination (e.g., 'Esc') to stop the keylogger.
+4. Access the `keylog.txt` file in the same directory as `main.py` to view the recorded keystrokes.
 
 ## **Example:**
 Suppose you run the keylogger program and type:
@@ -29,7 +29,7 @@ Suppose you run the keylogger program and type:
 Hello, world!
 ```
 
-The log file will contain:
+The `keylog.txt` file will contain:
 
 ```
 2024-03-11 12:00:01: 'H'
@@ -49,10 +49,11 @@ The log file will contain:
 
 ## **Requirements:**
 - Python 3.x
+- `pynput` library
 
 ## **Usage:**
 ```bash
-python keylogger.py
+python main.py
 ```
 
 **Note:** Ensure that you have Python installed on your system before running the program.
