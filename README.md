@@ -1,40 +1,35 @@
-```markdown
-# Simple Keylogger
+Sure, here's the README file with an example added:
 
-## Overview
-This is a simple Python keylogger program that captures and logs keystrokes into a text file. It utilizes the `pynput` library to monitor keyboard events.
 
-The `pynput` library allows this keylogger to listen to keyboard events in the background. It provides the `Key` module, which represents keys on the keyboard, and the `Listener` module, which listens for and handles keyboard events.
+# 🛡️ **Simple Keylogger**
 
-## Installation
+The Simple Keylogger is a Python program designed to capture and log keystrokes entered by users. It operates silently in the background, recording keystrokes into a text file.
 
-1. Ensure you have Python installed on your system. If not, download and install it from [python.org](https://www.python.org/).
-2. Install the `pynput` library using pip:
-   ```
-   pip install pynput
-   ```
+## **Features:**
+1. **Keystroke Logging:** The program captures and logs keystrokes entered by users.
+2. **Silent Operation:** It operates discreetly in the background without any visible indication to the user.
+3. **Customization:** Users can customize the log file name and location according to their preferences.
+4. **Termination:** The keylogger can be stopped at any time by pressing a predefined key combination.
 
-## Usage
+## **Components:**
+- `on_press(key)`: Function to handle key press events and log keystrokes.
+- `on_release(key)`: Function to handle key release events and stop the keylogger.
+- `main()`: The main function orchestrating the keylogger's operation and user interaction.
 
-1. Clone or download this repository to your local machine.
-2. Navigate to the directory containing the Python script (`keylogger.py`).
-3. Run the script using Python:
-   ```
-   python keylogger.py
-   ```
-4. The keylogger will silently capture keystrokes in the background.
-5. Press the escape key (Key.esc) to stop the keylogger.
-6. Access the `keylog.txt` file in the same directory to view logged keystrokes.
+## **How to Use:**
+1. Run the program.
+2. The keylogger starts capturing keystrokes silently in the background.
+3. Press the predefined key combination to stop the keylogger.
+4. Access the log file to view the recorded keystrokes.
 
-## Example
-
+## **Example:**
 Suppose you run the keylogger program and type:
 
 ```
 Hello, world!
 ```
 
-The `keylog.txt` file will contain:
+The log file will contain:
 
 ```
 2024-03-11 12:00:01: 'H'
@@ -52,7 +47,15 @@ The `keylog.txt` file will contain:
 2024-03-11 12:00:13: '!'
 ```
 
-## Disclaimer
+## **Requirements:**
+- Python 3.x
 
-This keylogger program is provided for educational purposes only. Do not use it for illegal activities. Respect the privacy and consent of others before using this software.
+## **Usage:**
+```bash
+python keylogger.py
 ```
+
+**Note:** Ensure that you have Python installed on your system before running the program.
+
+## **Contributors:**
+- [https://github.com/Janani-m17]
